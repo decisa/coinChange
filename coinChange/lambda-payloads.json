@@ -1,0 +1,26 @@
+{
+    "coinChange": {
+        "lambda": {
+            "amount": 1.46
+        },
+        "apigateway": {
+            "path": "/change",
+            "method": {
+                "value": "POST",
+                "items": [
+                    "GET",
+                    "POST",
+                    "PUT",
+                    "DELETE",
+                    "HEAD",
+                    "OPTIONS",
+                    "PATCH"
+                ]
+            },
+            "queryString": "amountx=1",
+            "body": {
+                "amount": "1.27"
+            }
+        }
+    }
+}
