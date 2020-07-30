@@ -1,7 +1,7 @@
 exports.handler = async (event, context) => {
     let input = event;
     
-    if (event.queryStringParameters) {
+    if (event.queryStringParameters && event.queryStringParameters.amount) {
         input = {
             amount: event.queryStringParameters.amount
         };
